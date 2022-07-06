@@ -52,7 +52,6 @@ class Caculator extends React.Component {
         })
         break
     }
-    console.log(this.state)
   }
   render() {
     return (
