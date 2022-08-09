@@ -1,0 +1,35 @@
+:root {
+  --active-color: red;
+}
+
+.tab-control {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px;
+  background-color: gainsboro;
+}
+
+.tab-item {
+  text-align: center;
+  height: 100%;
+  width: 100%;
+}
+
+.tab-item.active {
+  color: var(--active-color);
+  transition: all 0.2s;
+}
+
+.tab-item.active::after {
+  display: block;
+  margin: 0 auto;
+  height: 5px;
+  width: 40%;
+  content: '';
+  background-color: var(--active-color);
+}
+
+.page-content {
+  text-align: center;
+}

@@ -1,6 +1,7 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import App from './cpns/PropsFunc'
+import App from './cpns/App'
+import './style/index.css'
 
 const root = ReactDOM.createRoot(document.getElementById('root'))
 root.render(<App />)
